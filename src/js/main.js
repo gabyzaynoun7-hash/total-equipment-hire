@@ -262,18 +262,17 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.textContent = 'Sending...';
       }
 
-      // Collect form data as a plain object
+      // Send as FormData (not JSON) — Formspree's spam filter trusts
+      // standard form submissions more than raw JSON payloads
       const formData = new FormData(contactForm);
-      const data = Object.fromEntries(formData.entries());
 
       try {
         const response = await fetch(action, {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json',
             Accept: 'application/json',
           },
-          body: JSON.stringify(data),
+          body: formData,
         });
 
         if (response.ok) {

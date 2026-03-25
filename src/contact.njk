@@ -27,6 +27,8 @@ permalink: /contact/
         <form class="contact-form" action="{{ site.formspreeEndpoint }}" method="POST">
           <!-- Honeypot for spam protection -->
           <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <!-- Formspree settings -->
+          <input type="hidden" name="_subject" value="New Enquiry — Total Equipment Hire Website">
 
           <div class="form-group">
             <label for="name">Full Name <span class="required">*</span></label>
