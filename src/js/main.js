@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // -------------------------------------------------------
   // 5. Contact Form Handling (Formspree)
   // -------------------------------------------------------
-  const contactForm = document.querySelector('.contact-form form');
+  const contactForm = document.querySelector('form.contact-form');
 
   if (contactForm) {
     const submitBtn = contactForm.querySelector('[type="submit"]');
