@@ -1,0 +1,37 @@
+{
+  "name": "Total Equipment Hire",
+  "phone": "0452 092 221",
+  "phoneTel": "+61452092221",
+  "email": "simon-saadeh@hotmail.com",
+  "suburb": "Strathfield",
+  "state": "NSW",
+  "tagline": "Professional Restoration & Drying Equipment Hire Across Sydney",
+  "description": "Total Equipment Hire provides professional restoration and drying equipment across Sydney, supplying air movers, dehumidifiers, air scrubbers, and water extraction machines for flood and water damage situations. We work with plumbers, builders, and restoration companies, offering fast delivery and reliable equipment when it's needed most. With a focus on efficiency and service, we provide 24/7 emergency equipment hire to help get properties dry and back to normal quickly.",
+  "shortDescription": "Air movers, dehumidifiers, air scrubbers & extraction equipment. Fast delivery. 24/7 emergency hire.",
+  "areas": [
+    "Sydney CBD",
+    "Western Sydney",
+    "Inner West",
+    "Eastern Suburbs",
+    "North Shore",
+    "Northern Beaches",
+    "South Sydney",
+    "South West Sydney",
+    "Hills District",
+    "Parramatta Region"
+  ],
+  "logoJpg": "https://res.cloudinary.com/dyqqr7ipc/image/upload/v1774425457/tradiespark/logos/zvqccvu3d1u9vdwg5oth.jpg",
+  "logoPng": "https://res.cloudinary.com/dyqqr7ipc/image/upload/v1774425467/tradiespark/logos/klsfvd6w32b8fcas5ytw.png",
+  "heroPhoto": "https://res.cloudinary.com/dyqqr7ipc/image/upload/v1774425674/tradiespark/photos/bgkmds2sckh89f5q0xsh.png",
+  "formspreeEndpoint": "https://formspree.io/f/xojpargk",
+  "colors": {
+    "primary": "#F26522",
+    "dark": "#1A1A1A",
+    "accent": "#FF8C42",
+    "white": "#FFFFFF",
+    "lightBg": "#F5F5F5",
+    "darkBg": "#111111",
+    "text": "#333333",
+    "subtleText": "#666666"
+  }
+}

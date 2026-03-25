@@ -1,0 +1,56 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "site"
+        label: "Business Information"
+        file: "src/_data/site.json"
+        fields:
+          - { label: "Business Name", name: "name", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Phone (tel format)", name: "phoneTel", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Suburb", name: "suburb", widget: "string" }
+          - { label: "State", name: "state", widget: "string", default: "NSW" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Business Description", name: "description", widget: "text" }
+          - { label: "Short Description", name: "shortDescription", widget: "string" }
+          - label: "Service Areas"
+            name: "areas"
+            widget: "list"
+            field: { label: "Area", name: "area", widget: "string" }
+          - { label: "Logo (JPG)", name: "logoJpg", widget: "image", required: false }
+          - { label: "Logo (PNG)", name: "logoPng", widget: "image", required: false }
+          - { label: "Hero Photo", name: "heroPhoto", widget: "image", required: false }
+          - { label: "Formspree Endpoint", name: "formspreeEndpoint", widget: "string" }
+
+  - name: "services"
+    label: "Services"
+    files:
+      - name: "services"
+        label: "Equipment Services"
+        file: "src/_data/services.json"
+        fields:
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "URL Slug", name: "slug", widget: "string" }
+              - { label: "Short Description", name: "shortDescription", widget: "string" }
+              - { label: "Full Description", name: "description", widget: "text" }
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                field: { label: "Feature", name: "feature", widget: "string" }
+              - label: "Icon"
+                name: "icon"
+                widget: "select"
+                options: ["wind", "droplet", "shield", "waves", "gauge", "zap", "clock"]

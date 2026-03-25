@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Air Mover Hire",
+    "slug": "air-mover-hire",
+    "shortDescription": "Industrial-grade air movers for fast flood drying",
+    "description": "High-velocity air movers for drying flood-damaged properties. Our industrial-grade units accelerate evaporation across floors, walls, and cavities, getting your site dry faster and reducing the risk of secondary damage.",
+    "features": [
+      "High-velocity centrifugal and axial models",
+      "Stackable units for easy transport",
+      "Variable speed controls",
+      "Suitable for residential and commercial sites",
+      "Available in multiple sizes and airflow capacities"
+    ],
+    "icon": "wind"
+  },
+  {
+    "name": "Dehumidifier Hire",
+    "slug": "dehumidifier-hire",
+    "shortDescription": "Commercial dehumidifiers to prevent mould growth",
+    "description": "Commercial-grade dehumidifiers to extract moisture from the air efficiently. Essential for preventing mould growth after water damage events, our units handle everything from small rooms to large commercial spaces.",
+    "features": [
+      "LGR (Low Grain Refrigerant) technology",
+      "High extraction rates up to 130L per day",
+      "Built-in humidistat for automated operation",
+      "Compact and portable designs",
+      "Suitable for confined and open spaces"
+    ],
+    "icon": "droplet"
+  },
+  {
+    "name": "Air Scrubber Hire",
+    "slug": "air-scrubber-hire",
+    "shortDescription": "HEPA-filtered air scrubbers for clean, safe air",
+    "description": "HEPA-filtered air scrubbers to remove airborne contaminants, mould spores, and odours during restoration work. Our units create negative air pressure to contain affected areas and ensure safe working conditions.",
+    "features": [
+      "True HEPA filtration (99.97% efficiency)",
+      "Negative air pressure capability",
+      "Activated carbon filters for odour removal",
+      "Variable speed settings",
+      "Quiet operation for occupied buildings"
+    ],
+    "icon": "shield"
+  },
+  {
+    "name": "Flood Extraction Equipment Hire",
+    "slug": "flood-extraction-equipment-hire",
+    "shortDescription": "Powerful machines for removing standing water fast",
+    "description": "Powerful water extraction machines for removing standing water fast. We supply both truck-mount and portable extraction units to handle any scale of water damage, from minor leaks to major flood events.",
+    "features": [
+      "Truck-mount and portable units available",
+      "High-capacity extraction for large areas",
+      "Carpet and hard floor extraction tools",
+      "Submersible pump integration",
+      "Rapid response for emergency situations"
+    ],
+    "icon": "waves"
+  },
+  {
+    "name": "Moisture Detection Equipment Hire",
+    "slug": "moisture-detection-equipment-hire",
+    "shortDescription": "Professional tools to assess and verify drying",
+    "description": "Professional moisture meters and thermal imaging tools to assess water damage extent and verify drying completion. Accurate moisture readings ensure you know exactly where the water is and when the job is done.",
+    "features": [
+      "Pin and pinless moisture meters",
+      "Thermal imaging cameras",
+      "Hygrometers for relative humidity",
+      "Data logging capabilities",
+      "Non-destructive testing options"
+    ],
+    "icon": "gauge"
+  },
+  {
+    "name": "Water Pump Hire",
+    "slug": "water-pump-hire",
+    "shortDescription": "Submersible and transfer pumps for water removal",
+    "description": "Submersible and transfer pumps for removing large volumes of water from basements, crawl spaces, and flooded areas. Our pumps handle everything from clean water to debris-laden floodwater.",
+    "features": [
+      "Submersible electric pumps",
+      "Petrol-powered transfer pumps",
+      "High-flow and high-head options",
+      "Suitable for clean and dirty water",
+      "Quick-connect hose fittings included"
+    ],
+    "icon": "zap"
+  },
+  {
+    "name": "24/7 Emergency Equipment Hire",
+    "slug": "emergency-equipment-hire",
+    "shortDescription": "Round-the-clock delivery when you need it most",
+    "description": "Round-the-clock equipment delivery for urgent flood and water damage situations. When disaster strikes, we respond fast with the equipment you need, any time of day or night, anywhere across Sydney.",
+    "features": [
+      "Available 24 hours, 7 days a week",
+      "Rapid delivery across all Sydney regions",
+      "Emergency equipment packages available",
+      "On-site setup assistance",
+      "Phone support for equipment guidance"
+    ],
+    "icon": "clock"
+  }
+]
