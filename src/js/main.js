@@ -330,7 +330,25 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // -------------------------------------------------------
-  // 8. Click-to-Call / CTA Analytics Placeholder
+  // 8. Scroll-to-Top Button
+  // -------------------------------------------------------
+  const scrollTopBtn = document.querySelector('.scroll-top');
+
+  if (scrollTopBtn) {
+    const toggleScrollTop = () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    };
+
+    toggleScrollTop();
+    window.addEventListener('scroll', toggleScrollTop, { passive: true });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // -------------------------------------------------------
+  // 9. Click-to-Call / CTA Analytics Placeholder
   // -------------------------------------------------------
   document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
     link.addEventListener('click', () => {
