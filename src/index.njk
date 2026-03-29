@@ -5,121 +5,226 @@ description: "Professional restoration equipment hire across Sydney. Air movers,
 ---
 
 <!-- Hero Section -->
-<section class="hero" style="background-image: linear-gradient(rgba(17,17,17,0.75), rgba(17,17,17,0.75)), url('{{ site.heroPhoto }}');">
-  <div class="container hero-content">
-    <h1 class="hero-title fade-in">Sydney's Trusted Equipment Hire for Flood &amp; Water Damage</h1>
-    <p class="hero-subtitle fade-in">{{ site.shortDescription }}</p>
-    <div class="hero-buttons fade-in">
-      <a href="/contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
-      <a href="tel:{{ site.phoneTel }}" class="btn btn-outline btn-lg">Call Now: {{ site.phone }}</a>
-    </div>
-  </div>
-</section>
-
-<!-- Services Overview -->
-<section class="section" id="services">
-  <div class="container">
-    <div class="section-header fade-in">
-      <h2>Our Equipment</h2>
-      <p>Professional-grade restoration and drying equipment available for hire across Sydney</p>
-    </div>
-
-    <div class="services-grid" data-stagger>
-      {% for service in services %}
-      <div class="service-card fade-in">
-        <div class="service-icon">
-          {% if service.icon == "wind" %}
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
-          {% elif service.icon == "droplet" %}
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
-          {% elif service.icon == "shield" %}
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          {% elif service.icon == "waves" %}
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg>
-          {% elif service.icon == "gauge" %}
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 6v6l4 2"/></svg>
-          {% elif service.icon == "zap" %}
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          {% elif service.icon == "clock" %}
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          {% endif %}
-        </div>
-        <h3 class="service-card-title">{{ service.name }}</h3>
-        <p class="service-card-text">{{ service.shortDescription }}</p>
-        <a href="/services#{{ service.slug }}" class="service-card-link">Learn More</a>
+<section class="hero-premium">
+  <div class="hero-overlay"></div>
+  <div class="container hero-inner">
+    <div class="hero-content-wrap">
+      <div class="hero-badge">24/7 EMERGENCY EQUIPMENT HIRE</div>
+      <h1 class="hero-headline">
+        <span class="hero-headline-white">24/7 Restoration</span>
+        <span class="hero-headline-orange">Equipment Hire</span>
+      </h1>
+      <p class="hero-equipment-list">Air Movers &bull; Dehumidifiers &bull; Air Scrubbers &bull; Flood Extraction</p>
+      <p class="hero-subtext">Servicing Sydney plumbers, builders and restoration contractors.</p>
+      <div class="hero-cta-row">
+        <a href="tel:{{ site.phoneTel }}" class="btn-cta-primary">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          CALL NOW {{ site.phone }}
+        </a>
+        <a href="/contact" class="btn-cta-outline">GET A FREE QUOTE</a>
       </div>
-      {% endfor %}
     </div>
   </div>
 </section>
 
-<!-- Why Choose Us -->
-<section class="section section-light">
+<!-- Our Equipment Section -->
+<section class="section-equipment" id="equipment">
   <div class="container">
-    <div class="section-header fade-in">
-      <h2>Why Choose Total Equipment Hire</h2>
-    </div>
+    <div class="section-label">OUR EQUIPMENT</div>
+    <h2 class="section-title-dark">Professional-Grade Restoration Equipment</h2>
+    <p class="section-subtitle-dark">Industrial equipment available for hire across all Sydney metro regions</p>
 
-    <div class="trust-grid" data-stagger>
-      <div class="trust-item fade-in">
-        <div class="trust-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    <div class="equipment-grid">
+      <!-- Air Movers -->
+      <div class="equipment-card">
+        <div class="equipment-card-img">
+          <img src="/images/air-mover.jpg" alt="Industrial air mover for flood drying" loading="lazy">
+          <div class="equipment-card-badge">POPULAR</div>
+        </div>
+        <div class="equipment-card-body">
+          <h3>Air Movers</h3>
+          <p>High-velocity industrial air movers for fast flood drying. Variable speed, stackable units.</p>
+          <div class="equipment-card-actions">
+            <a href="tel:{{ site.phoneTel }}" class="btn-card-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              CALL NOW
+            </a>
+            <a href="/services#air-mover-hire" class="btn-card-outline">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dehumidifiers -->
+      <div class="equipment-card">
+        <div class="equipment-card-img">
+          <img src="/images/dehumidifier.jpg" alt="Commercial dehumidifier for moisture removal" loading="lazy">
+        </div>
+        <div class="equipment-card-body">
+          <h3>Dehumidifiers</h3>
+          <p>Commercial LGR dehumidifiers to extract moisture and prevent mould. Up to 130L/day.</p>
+          <div class="equipment-card-actions">
+            <a href="tel:{{ site.phoneTel }}" class="btn-card-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              CALL NOW
+            </a>
+            <a href="/services#dehumidifier-hire" class="btn-card-outline">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- HEPA Air Scrubbers -->
+      <div class="equipment-card">
+        <div class="equipment-card-img">
+          <img src="/images/air-scrubber.jpg" alt="HEPA air scrubber for clean air during restoration" loading="lazy">
+        </div>
+        <div class="equipment-card-body">
+          <h3>HEPA Air Scrubbers</h3>
+          <p>HEPA-filtered air scrubbers removing 99.97% of contaminants, mould spores & odours.</p>
+          <div class="equipment-card-actions">
+            <a href="tel:{{ site.phoneTel }}" class="btn-card-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              CALL NOW
+            </a>
+            <a href="/services#air-scrubber-hire" class="btn-card-outline">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flood Extraction -->
+      <div class="equipment-card">
+        <div class="equipment-card-img">
+          <img src="/images/flood-extractor.jpg" alt="Flood extraction machine for water removal" loading="lazy">
+        </div>
+        <div class="equipment-card-body">
+          <h3>Flood Extraction Machines</h3>
+          <p>Powerful water extraction machines for removing standing water fast. Portable & truck-mount.</p>
+          <div class="equipment-card-actions">
+            <a href="tel:{{ site.phoneTel }}" class="btn-card-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              CALL NOW
+            </a>
+            <a href="/services#flood-extraction-equipment-hire" class="btn-card-outline">VIEW DETAILS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Emergency Equipment Hire Section -->
+<section class="section-emergency">
+  <div class="emergency-bg-overlay"></div>
+  <div class="container emergency-inner">
+    <div class="emergency-content">
+      <div class="emergency-badge">24/7 EQUIPMENT HIRE AVAILABLE</div>
+      <h2 class="emergency-title">Emergency Equipment Hire</h2>
+      <p class="emergency-text">When disaster strikes, we respond fast with the equipment you need &mdash; any time of day or night, anywhere across Sydney.</p>
+
+      <ul class="emergency-checklist">
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F26522" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Burst pipes &amp; plumbing emergencies
+        </li>
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F26522" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Flood damage restoration
+        </li>
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F26522" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Water leaks &amp; moisture control
+        </li>
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F26522" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Insurance restoration jobs
+        </li>
+      </ul>
+
+      <p class="emergency-delivery">Fast delivery across all Sydney metro regions.</p>
+
+      <a href="tel:{{ site.phoneTel }}" class="btn-cta-primary btn-cta-lg">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        CALL NOW {{ site.phone }}
+      </a>
+    </div>
+    <div class="emergency-image">
+      <img src="/images/equipment-lineup.jpg" alt="Complete restoration equipment lineup - air movers, dehumidifiers, extractors" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- Who We Work With -->
+<section class="section-trust">
+  <div class="container">
+    <div class="section-label">WHY CHOOSE US</div>
+    <h2 class="section-title-dark">Trusted by Sydney's Best</h2>
+
+    <div class="trust-features">
+      <div class="trust-feature">
+        <div class="trust-icon-circle">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F26522" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
         <h3>24/7 Emergency Hire</h3>
-        <p>Equipment available around the clock. Call anytime for urgent flood and water damage situations.</p>
+        <p>Equipment available around the clock for urgent situations.</p>
       </div>
 
-      <div class="trust-item fade-in">
-        <div class="trust-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+      <div class="trust-feature">
+        <div class="trust-icon-circle">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F26522" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
         </div>
-        <h3>Fast Sydney-Wide Delivery</h3>
-        <p>Rapid equipment delivery across all Sydney metro regions. We get to you when you need it.</p>
+        <h3>Fast Delivery</h3>
+        <p>Rapid delivery across all Sydney metro regions.</p>
       </div>
 
-      <div class="trust-item fade-in">
-        <div class="trust-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <div class="trust-feature">
+        <div class="trust-icon-circle">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F26522" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <h3>Professional Grade Equipment</h3>
-        <p>Industrial-quality air movers, dehumidifiers, and extraction machines maintained to the highest standard.</p>
+        <h3>Professional Restoration</h3>
+        <p>Industrial-quality equipment maintained to the highest standard.</p>
       </div>
 
-      <div class="trust-item fade-in">
-        <div class="trust-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <div class="trust-feature">
+        <div class="trust-icon-circle">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F26522" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
         </div>
-        <h3>Trusted by Professionals</h3>
-        <p>Plumbers, builders, and restoration companies across Sydney rely on us for quality equipment.</p>
+        <h3>Competitive Rates</h3>
+        <p>Fair pricing with no hidden fees. Flexible hire terms.</p>
+      </div>
+
+      <div class="trust-feature">
+        <div class="trust-icon-circle">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F26522" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Reliable Service</h3>
+        <p>Trusted by plumbers, builders and restoration pros.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Service Areas -->
-<section class="section section-dark areas-section">
+<section class="section-areas">
   <div class="container">
-    <div class="section-header fade-in">
-      <h2>We Service All of Sydney</h2>
-      <p>Fast equipment delivery across every major Sydney region</p>
-    </div>
+    <div class="section-label section-label-light">SERVICE AREAS</div>
+    <h2 class="section-title-light">We Service All of Sydney</h2>
+    <p class="section-subtitle-light">Fast equipment delivery across every major Sydney region</p>
 
-    <div class="areas-grid fade-in">
+    <div class="areas-badges">
       {% for area in site.areas %}
-      <span class="area-badge">{{ area }}</span>
+      <span class="area-tag">{{ area }}</span>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<!-- Emergency CTA Banner -->
-<section class="cta-banner">
+<!-- Final CTA -->
+<section class="section-final-cta">
   <div class="container text-center">
-    <h2 class="cta-title">Need Emergency Equipment?</h2>
-    <p class="cta-text">We're available 24/7 for urgent flood and water damage situations across Sydney</p>
-    <a href="tel:{{ site.phoneTel }}" class="cta-phone">Call {{ site.phone }}</a>
-    <div class="cta-buttons">
-      <a href="/contact" class="btn btn-white btn-lg">Get a Free Quote</a>
-    </div>
+    <h2 class="final-cta-title">Need Equipment? We're Ready.</h2>
+    <p class="final-cta-text">Professional restoration equipment, delivered fast, 24/7 across Sydney.</p>
+    <a href="tel:{{ site.phoneTel }}" class="btn-cta-primary btn-cta-xl">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      CALL NOW {{ site.phone }}
+    </a>
   </div>
 </section>
